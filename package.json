@@ -26,7 +26,7 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "package": "electron-builder"
+    "package": "npm run build && electron-builder"
   },
   "eslintConfig": {
     "extends": [
@@ -63,9 +63,6 @@
     "files": [
       "build/**/*",
       "node_modules/**/*"
-    ],
-    "directories": {
-      "buildResources": "assets"
-    }
+    ]
   }
 }

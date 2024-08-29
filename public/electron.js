@@ -18,7 +18,7 @@ function createWindow() {
   });
 
   mainWindow.loadURL(
-    process.env.ELECTRON_START_URL || `file://${path.join(__dirname, './build/index.html')}`
+    process.env.ELECTRON_START_URL || path.join(__dirname, './index.html')
   );
 
   mainWindow.on('closed', function () {
